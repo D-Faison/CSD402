@@ -20,7 +20,9 @@ public class EnergyHeatWater {
         double finalTemp;
         String finalTempInput;
 
-        //final Double heatCapacity = 4186;
+        double deltaTemp;
+
+        final int heatCapacity = 4186;
 
         //Request Input through displays
         waterMassInput = JOptionPane.showInputDialog(null, "Enter Mass of water in Kilograms: ",
@@ -35,5 +37,10 @@ public class EnergyHeatWater {
         finalTempInput = JOptionPane.showInputDialog(null, "Enter FINAL Temperature in C: ",
          "Final Temp Input",JOptionPane.QUESTION_MESSAGE);
         finalTemp = Double.parseDouble(finalTempInput);
+
+        //Delta temp variable
+        deltaTemp = finalTemp-intialTemp;
+        
+        JOptionPane.showMessageDialog(null, waterMass * deltaTemp * heatCapacity,"Energy Required to Heat Water: ",JOptionPane.INFORMATION_MESSAGE);
     }
 }
