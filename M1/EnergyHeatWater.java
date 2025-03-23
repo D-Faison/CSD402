@@ -1,5 +1,5 @@
 /* DeJanae Faison
- DATE
+ 3/23/2025
  Assignment M1 
  Description: Calculate the energy needed to heat water from an intial temp
  to a final temp */
