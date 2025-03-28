@@ -11,6 +11,7 @@ public class RockPaperScissors{
         int[] gameInput = {1,2,3};
         int Computer;
 
+
         Random random = new Random();
         //Plus 1 since it was doing 0-2
         Computer = random.nextInt(gameInput.length)+1;
@@ -19,12 +20,28 @@ public class RockPaperScissors{
 
         System.out.println("Rock Paper Scissors!");
         System.out.println("Rock = 1 \nPaper = 2 \nScissors = 3");
-        System.out.println("Enter either 1,2, or 3: ");
+        System.out.print("Enter either 1,2, or 3: ");
 
         int playerInput = scInput.nextInt();
-        scInput.close();
+        
 
-        //look up switch and cases
+        String playerChoice = "";
+
+        switch(playerInput){
+            case 1 -> playerChoice = "Rock";
+            case 2 -> playerChoice = "Paper";
+            case 3 -> playerChoice = "Scissors";
+        }
+
+        String computerChoice = "";
+
+        switch(Computer){
+            case 1 -> computerChoice = "Rock";
+            case 2 -> computerChoice = "Paper";
+            case 3 -> computerChoice = "Scissors";
+        }
+
+        
 
         if (playerInput == Computer) {
 
@@ -32,16 +49,16 @@ public class RockPaperScissors{
         } 
         else if ((playerInput == 1 && Computer ==2)||(playerInput == 2 && Computer == 3)||(playerInput == 3 && Computer == 1)) {
             
-            System.out.println("Computer:"+Computer);
-            System.out.println("You"+playerInput);
-            System.out.println("LOSER");
+            System.out.println("Computer: "+ computerChoice);
+            System.out.println("You: "+ playerChoice);
+            System.out.println("YOU LOSE");
             
         }
         else{
-            System.out.println("Computer:"+Computer);
-            System.out.println("You"+playerInput);
+            System.out.println("Computer: "+ computerChoice);
+            System.out.println("You: "+ playerChoice);
             System.out.println("YOU WIN!");
         }
-        
+        scInput.close();
     }
 }
