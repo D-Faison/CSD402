@@ -4,7 +4,7 @@ public class Faison_M3 {
 		int startRight = 0,	// Initialize decending numbers
 			 endSpace = 7;		// Initialize number of white space in row
 
-		StringBuilder sb = new StringBuilder();
+		//StringBuilder sb = new StringBuilder();
 
 		// Display number of rows and numbers in each row
 		for (int row = 1; row <= 64; row += row) {
@@ -22,10 +22,6 @@ public class Faison_M3 {
 				System.out.printf("%4d", (r));	
 			}
 
-			for (int a = 0; a <= startRight; a++) {
-				//sb.append(row).append("@");
-				System.out.print("@");
-			}
 
 			System.out.println();	// End line
 			endSpace--; 				// Decrement endSpace
@@ -39,3 +35,6 @@ public class Faison_M3 {
 }
 /*Resources: */
 /*https://github.com/jsquared21/Intro-to-Java-Programming/blob/master/Exercise_05/Exercise_05_19/Exercise_05_19.java */
+/*jsquared21. (2015). Intro-to-Java-Programming/Exercise_05/Exercise_05_19/Exercise_05_19.java at master · jsquared21/Intro-to-Java-Programming. GitHub. https://github.com/jsquared21/Intro-to-Java-Programming/blob/master/Exercise_05/Exercise_05_19/Exercise_05_19.java
+
+ */
