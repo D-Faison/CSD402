@@ -1,6 +1,6 @@
 /*DeJanae Faison M5 4.13.25 */
 
-public class Main {
+public class Faison_M5 {
     //Largest in double array
     public static int[] locateLargest(double [][] arrayParam){
         //array that holds 2 intergers
