@@ -1,5 +1,5 @@
 //DeJanae Faison M6 4.13.25
-public class Fan {
+class Fan {
     
     //Fan Speeds
     final int STOPPED = 0;
