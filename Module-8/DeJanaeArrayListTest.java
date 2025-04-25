@@ -1,3 +1,5 @@
+//DeJanae Faison 4.27.25 M8 assignment
+//Max number array
 
 import java.util.ArrayList;
 import java.util.Scanner;
