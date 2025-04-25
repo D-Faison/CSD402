@@ -11,7 +11,10 @@ public class DeJanaeArrayListTest {
             return 0;
         }
 
+        //set the maximum to the first listed item 
         Integer maximum = list.get(0);
+        //for each number in the list
+        //if the number is bigger than the last; set it to the maximum
         for (Integer num : list) {
             if(num > maximum){
                 maximum = num;
@@ -53,7 +56,7 @@ public class DeJanaeArrayListTest {
 
         System.out.println(numberList);
         userInput.close();
-
+        //Send list through max function
        Integer maxNumFromList = max(numberList);
         
        System.out.println(maxNumFromList);
