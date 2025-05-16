@@ -1,4 +1,4 @@
-//DeJanae Faison M12
+//DeJanae Faison M12 5.16.25
 //Yearly Auto Service Fees
 
 public class FaisonAutoService {
@@ -43,6 +43,7 @@ public class FaisonAutoService {
         System.out.println("Standard Service Charge: $"+yearlyService()+"\n");
 
         //Standard and Oil Change
+        //Using not only the variables but whatever number decided
         System.out.println("Oil and Service Charge: $"+yearlyService(OIL_CHANGE));
         System.out.println("Oil and Service Charge: $"+yearlyService(40.75)+"\n");
 
